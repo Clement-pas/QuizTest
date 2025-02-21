@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#quiz-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.hidden {
+    display: none;
+}
+
+#main-menu h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#category-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#category-selection select, #category-selection input, #category-selection button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#quiz-game {
+    position: relative;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #000;
+}
+
+#close-btn:hover {
+    color: #ff0000;
+}
+
+#timer {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#question {
+    font-size: 2em;
+    margin-bottom: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#answer {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: green;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#next-btn {
+    background-color: #28a745;
+}
+
+#next-btn:hover {
+    background-color: #218838;
+}
+
+#show-answer-btn {
+    background-color: #ffc107;
+    color: #000;
+}
+
+#show-answer-btn:hover {
+    background-color: #e0a800;
+}
+
+#result-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+#restart-btn {
+    background-color: #28a745;
+}
+
+#restart-btn:hover {
+    background-color: #218838;
+}
+
+#main-menu-btn {
+    background-color: #dc3545;
+}
+
+#main-menu-btn:hover {
+    background-color: #c82333;
+}

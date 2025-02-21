@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="quiz-container">
+        <!-- Menu principal -->
+        <div id="main-menu">
+            <h1>Jeu de Quiz</h1>
+            <div id="category-selection">
+                <label for="category">Choisissez une catégorie :</label>
+                <select id="category">
+                    <!-- Les catégories seront ajoutées dynamiquement -->
+                </select>
+                <label for="time-input">Temps par question (secondes) :</label>
+                <input type="number" id="time-input" min="10" max="120" value="30">
+                <button id="start-btn">Commencer</button>
+            </div>
+        </div>
+
+        <!-- Interface du jeu -->
+        <div id="quiz-game" class="hidden">
+            <button id="close-btn">&#10006;</button> <!-- Croix pour fermer -->
+            <div id="timer">Temps restant : <span id="time">00:00</span></div>
+            <div id="question"></div>
+            <div id="answer" class="hidden"></div>
+            <div id="buttons-container">
+                <button id="skip-btn">Passer</button>
+                <button id="show-answer-btn">Réponse</button>
+                <button id="next-btn" class="hidden">Suivant</button>
+            </div>
+        </div>
+
+        <!-- Résultat -->
+        <div id="result" class="hidden">
+            <h2>Partie terminée !</h2>
+            <p>Vous avez trouvé <span id="score">0</span> mots.</p>
+            <div id="result-buttons">
+                <button id="restart-btn">Rejouer</button>
+                <button id="main-menu-btn">Menu Principal</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
