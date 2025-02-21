@@ -1,19 +1,4 @@
 const categories = {
-    animaux: [
-        { question: "Quel animal est le roi de la jungle ?", answer: "Le lion" },
-        { question: "Quel animal a une longue trompe ?", answer: "L'éléphant" },
-        { question: "Quel animal est le plus grand du monde ?", answer: "La baleine bleue" }
-    ],
-    geographie: [
-        { question: "Quelle est la capitale de la France ?", answer: "Paris" },
-        { question: "Quel est le plus grand pays du monde ?", answer: "La Russie" },
-        { question: "Quel fleuve traverse l'Égypte ?", answer: "Le Nil" }
-    ],
-    histoire: [
-        { question: "Qui a été le premier empereur de Rome ?", answer: "Auguste" },
-        { question: "Qui a découvert l'Amérique en 1492 ?", answer: "Christophe Colomb" },
-        { question: "Qui a écrit 'Les Misérables' ?", answer: "Victor Hugo" }
-    ],
     "Les bronzés font du ski": 
     [
         { question: "Comment ce nomme l'élève de Popeye qui tombe dans les premières minutes du film ?", answer: "Mme Schmitt" },
